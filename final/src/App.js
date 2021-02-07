@@ -13,7 +13,7 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    fetch('http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC')
+    fetch('http://api.giphy.com/v1/gifs/trending?api_key=IyFBAXhcEZX69jImQX9hy5ZUx8iL5iAf')
       .then(response => response.json())
       .then(data => {
         this.setState({gifs: data.data});
