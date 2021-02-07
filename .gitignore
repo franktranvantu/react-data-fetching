@@ -1,0 +1,3 @@
+# Project exclude paths
+/final/node_modules/
+/start/node_modules/
