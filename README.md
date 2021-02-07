@@ -1,1 +1,1 @@
-In this section, we'll wire the app up to the Giphy API results and display them as a list of animated GIFs.
+In this section, we'll use Giphy API's search endpoint to add a Gif search feature to our app.
