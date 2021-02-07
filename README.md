@@ -1,3 +1,1 @@
-Learn to make server requests in React using Axios, a promised-based library that's similar to the Fetch API. 
-
-In addition to having stronger browser support than fetch(), Axios provides many useful built-in features.
+In this section, we'll wire the app up to the Giphy API results and display them as a list of animated GIFs.
