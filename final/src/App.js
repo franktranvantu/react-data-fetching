@@ -14,7 +14,7 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC')
+    axios.get('http://api.giphy.com/v1/gifs/trending?api_key=IyFBAXhcEZX69jImQX9hy5ZUx8iL5iAf')
       .then(response => {
         this.setState({
           gifs: response.data.data
