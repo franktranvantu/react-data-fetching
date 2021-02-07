@@ -1,1 +1,1 @@
-Learn different methods for fetching external data in React, and how to display the data in your app.
+Learn to use the Fetch API, a data-fetching interface native to the browser, to load external data and update state in React.
