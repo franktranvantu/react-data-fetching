@@ -14,7 +14,11 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://api.giphy.com/v1/gifs/trending?api_key=IyFBAXhcEZX69jImQX9hy5ZUx8iL5iAf')
+
+  }
+
+  handleSearch = (query) => {
+    axios.get(`http://api.giphy.com/v1/gifs/search?api_key=IyFBAXhcEZX69jImQX9hy5ZUx8iL5iAf&q=${query}&limit=24`)
       .then(response => {
         this.setState({
           gifs: response.data.data
@@ -32,7 +36,7 @@ export default class App extends Component {
         <div className="main-header">
           <div className="inner">
             <h1 className="main-title">GifSearch</h1>
-            <SearchForm />      
+            <SearchForm onSearch={this.handleSearch}/>
           </div>   
         </div>    
         <div className="main-content">
